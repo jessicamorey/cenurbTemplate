@@ -1,0 +1,646 @@
+/*@font-face {
+    font-family: Yanone;
+    font-style: normal;
+    font-weight: 100;
+    src: url(../fonts/YANONEKAFFEESATZ-THIN.TTF);
+}*/
+
+body {
+    background: #f5f5f5 !important;
+}
+
+@font-face {
+    font-family: Yanone;
+    font-style: normal;
+    font-weight: 300;
+    src: url(../font/YanoneKaffeesatz-Light_0.ttf);
+}
+
+@font-face {
+    font-family: Yanone;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../font/YanoneKaffeesatz-Regular.ttf);
+}
+
+@font-face {
+    font-family: Yanone;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/YanoneKaffeesatz-Bold_0.ttf);
+}
+
+
+/*@font-face {
+    font-family: Yanone;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/YANONEKAFFEESATZ-REGULAR.TTF);
+}
+
+@font-face {
+    font-family: Yanone;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/YANONEKAFFEESATZ-BOLD.TTF);
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    ;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.cabecera {
+    background-color: #1d5d83;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between center;
+}
+
+    .cabecera > div {
+        width: 100%;
+    }
+
+    .cabecera .divmenu {
+        background-color: #ddd;
+        display: flex;
+        justify-content: space-between;
+        border-top: 3px solid #ddd;
+    }
+
+.divmenu .rmLink.rmRootLink, .RadMenu a.rmImageOnly .rmLeftImage, .RadMenu .rmRootGroup a.rmImageOnly {
+    padding: 5px 12px;
+    border-radius: 3px 3px 0 0;
+}
+
+    .divmenu .rmLink.rmRootLink span {
+        font-weight: bold;
+    }
+
+#CabeceraMaster {
+    display: block;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+}
+
+
+
+.cabecera .titulo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 60px;
+    margin-left: 30px;
+    letter-spacing: 2px;
+}
+
+h1.titulo {
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+    float: left;
+    height: 80px;
+    line-height: 80px;
+}
+
+.logo {
+    float: left;
+}
+
+    .logo img {
+        height: 80px;
+        padding: 5px;
+    }
+
+.cabecera .login {
+    display: inline-block;
+    float: right;
+}
+
+.cabecera.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.cabecera .idiomas {
+    display: flex;
+    align-items: center;
+}
+
+    .cabecera .idiomas input {
+        border: 0 none;
+        border-radius: 0;
+        padding: 0px 5px;
+        cursor: pointer;
+        height: 20px;
+    }
+
+        .cabecera .idiomas input:hover {
+            opacity: .8;
+        }
+
+
+.panelLogin .login {
+    border: none !important;
+    padding: 0px;
+    width: 85%;
+    margin: auto;
+}
+
+.creditos .datos:hover {
+    text-decoration: underline;
+}
+
+.cabecera .usuario {
+    color: #04d593;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 40px;
+    position: relative;
+    z-index: 999;
+    font-size: 20px;
+}
+
+    .cabecera .usuario:hover {
+        text-decoration: underline;
+    }
+
+.cabecera .datos {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.cuerpo {
+    background-color: #f5f5f5;
+}
+
+#mainContentDiv {
+    min-height: calc(100vh - 340px);
+}
+
+.creditos {
+    text-align: right;
+    padding: 15px 0 0 0;
+}
+
+.pie {
+	position: relative;
+
+}
+
+    .pie .pajaros {
+        background: url("../img/pie_pajaros.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+        height: 110px;
+        position: relative;
+    }
+
+    .pie .pluma {
+        background: url("../img/pie_pluma.png") no-repeat scroll center top #1d5d83;
+        color: #fff;
+        display: flex;
+        height: 75px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+        .pie .pluma a {
+            color: #04d593;
+            text-decoration: none;
+        }
+
+            .pie .pluma a img {
+                background-color: #fff;
+                border-radius: 100%;
+                margin-left: 5px;
+                transition: all 0.2s ease;
+            }
+
+                .pie .pluma a img:hover {
+                    background-color: #ddd;
+                }
+
+    .pie .info {
+        text-align: right;
+    }
+
+    .pie .contacto {
+        text-align: right;
+        flex-grow: 1;
+    }
+
+
+h2 {
+    font-size: 28px;
+    padding: 0 0 10px;
+    font-weight: 700;
+    color: #1d5d83;
+    text-align: center;
+}
+
+
+
+
+/* ---------- CABECERA ---------- */
+
+
+
+
+/* Aplicaciones móviles */
+.cabecera .market {
+    padding-left: 10px;
+}
+
+    .cabecera .market img {
+        margin-top: 23px;
+    }
+
+
+.grupoMenu {
+    margin-left: 35px !important;
+}
+
+
+.RadMenu_Default .rmGroup, .RadMenu_Default .rmMultiColumn, .RadMenu_Default .rmGroup .rmVertical {
+    border-color: transparent !important;
+}
+
+.gritter-item-wrapper {
+    background-color: rgba(0,0,0,0.8);
+    background-image: none !important;
+}
+
+    .gritter-item-wrapper div {
+        background-image: none !important;
+    }
+
+.gritter-item .gritter-close {
+    background-image: url("../img/gritter.png") !important;
+    margin: -15px 0 0 -15px;
+}
+
+.cabecera .menu {
+    z-index: 800;
+}
+
+.cabecera .RadMenu_Default .rmRootGroup {
+    border: none;
+}
+
+.cabecera .RadMenu_Default a.rmLink,
+.cabecera .RadMenu_Default a.rmDisabled,
+.cabecera .RadMenu_Default a.rmDisabled:hover {
+    background-position: 0 -72px !important;
+}
+
+
+/* ---------- PIE ---------- */
+
+
+
+/* ---------- VENTANA DE LOGIN ---------- */
+
+.panelLogin {
+    min-height: 300px !important;
+    box-sizing: border-box;
+    /*overflow: hidden !important;*/
+    background: #fff !important;
+}
+
+    .panelLogin iframe {
+        height: 338px !important;
+        overflow: hidden;
+    }
+
+/*.panelLogin > .rwTable {
+        min-height: 400px !important;
+    }*/
+
+.formInput input {
+    border: none !important;
+    border-bottom-width: medium;
+    border-bottom-style: none;
+    border-bottom-color: currentcolor;
+    border-bottom: 2px solid #1d5d83 !important;
+    width: 100% !important;
+    display: block;
+}
+
+    .formInput input:focus {
+        border-bottom: 2px solid #04d593 !important;
+    }
+
+    .formInput input.rbDecorated:focus {
+        border-bottom: none !important;
+    }
+
+.formInput .RadInput.RadInput_Default {
+    width: 100% !important;
+    display: block !important;
+    height: 35px;
+}
+
+    .formInput .RadInput.RadInput_Default > .riTextBox {
+        height: 100% !important;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+.Container {
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff !important;
+    margin: 20px;
+    border: 1px solid lightgrey;
+}
+
+    .Container.Admin {
+        max-width: 580px;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .Container.AdminGrande {
+        max-width: 850px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+.divmenu .rmRootGroup > li.rmItem {
+    margin-left: 5px;
+}
+
+li.rmItem:hover, a.rmLink.rmRootLink.rmSelected.rmHovered, a.rmLink.rmRootLink.rmSelected.rmFocused.rmHovered {
+    background-color: #04d593 !important;
+    border: none !important;
+    border-radius: 3px 3px 0 0;
+}
+
+    li.rmItem:hover span, a.rmLink.rmRootLink.rmSelected.rmHovered span, a.rmLink.rmRootLink.rmSelected.rmFocused.rmHovered span {
+        color: #04d593 !important;
+    }
+
+    li.rmItem:hover > .rmText {
+        color: #000 !important;
+    }
+
+li.rmItem .rmExpanded:hover, li.rmItem .rmRootLink:hover {
+    border-color: transparent !important;
+}
+
+.PageRegistro {
+    padding: 20px;
+}
+
+.RadMenu_Metro .rmRootLink {
+    padding: 0 10px;
+    border: 1px solid transparent;
+    color: #1d5d83;
+}
+
+.RadMenu_Metro .rmSlide > .rmVertical li.rmItem {
+    padding: 10px !important;
+    cursor: pointer;
+    color: #1d5d83 !important;
+}
+
+    .RadMenu_Metro .rmSlide > .rmVertical li.rmItem:hover {
+        background-color: #ddd !important;
+    }
+
+.rmSlide ul {
+    padding: 0;
+}
+
+.RadMenu_Metro .rmSlide > .rmVertical li.rmItem:hover > .rmLink {
+    color: #fff !important;
+}
+
+.RadMenu_Metro .rmGroup .rmLink:hover, .RadMenu_Metro .rmGroup .rmLink.rmFocused, .RadMenu_Metro .rmGroup .rmLink.rmExpanded {
+    background-color: transparent !important;
+}
+
+.rmLink.rmSelected {
+    color: #000 !important;
+}
+
+.RadWizard .rwzContent {
+    overflow: visible !important;
+}
+
+.RadWizard_Metro .rwzBreadCrumb .rwzLink {
+    margin: auto;
+    text-align: center;
+    height: 40px !important;
+    line-height: 40px;
+}
+
+.RadWizard_Metro .rwzBreadCrumb .rwzSelected .rwzLink {
+    background-color: #1d5d83;
+    margin: auto;
+    text-align: center;
+}
+
+.RadWizard_Metro .rwzProgress {
+    background-color: #1d5d83;
+}
+
+.RadWizard_Metro .rwzBreadCrumb .rwzLink, .RadWizard_Metro .rwzProgressBar {
+    background-color: #ddd;
+}
+
+.RadWizard_Metro .rwzBreadCrumb .rwzSelected {
+    border-color: transparent !important;
+    border: none;
+}
+
+    .RadWizard_Metro .rwzBreadCrumb .rwzSelected .rwzCallout, .RadWizard_Metro .rwzBreadCrumb .rwzCallout {
+        background-image: url("../img/TriangleRadWizard.png");
+        display: none !important;
+    }
+
+.RadWizard_Metro .rwzBreadCrumb .rwzHovered .rwzLink {
+    background-color: #1d5d83 !important;
+    transition: all ease .3s;
+    color: #fff;
+}
+
+.RadWizard_Metro .rwzBreadCrumb .rwzHovered {
+    border-color: transparent !important;
+}
+
+.RadImageGallery {
+    margin: 0 auto;
+}
+
+    .RadImageGallery .rigToolbar {
+        background: #efefef;
+        width: 100% !important;
+        border: 1px solid lightgrey;
+    }
+
+.Table .RadComboBox tbody td {
+    padding: 3px !important;
+}
+
+table td > .RadComboBox {
+    width: 100% !important;
+}
+
+.rwzHorizontal .rwzBreadCrumb {
+    width: 80%;
+    display: table;
+    margin: auto;
+    min-width: 500px;
+}
+
+.RadWizard .rwzProgressBar {
+    width: 80%;
+    margin: 10px auto;
+    min-width: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.RadWizard .rwzProgress {
+    height: 10px !important;
+}
+
+ey !important;
+}
+
+
+
+
+
+/*HACK FIREFOX*/
+
+@-moz-document url-prefix() {
+    .panelLogin iframe {
+        height: 335px !important;
+    }
+}
+
+
+/*HACK IE*/
+
+@media screen\0 {
+    .panelLogin iframe {
+        height: 332px !important;
+    }
+
+    .Filtros > .filtro {
+        vertical-align: top;
+    }
+
+    div#leyenda h2 {
+        line-height: 20px;
+    }
+}
+
+
+
+/*MEDIA*/
+
+@media (max-width:1280px) {
+
+    * {
+        font-size: 18px;
+    }
+
+    .Resultado.Mapa > div {
+        width: 100%;
+    }
+
+    .Resultado.Mapa {
+        max-width: 850px;
+    }
+
+    .menu > .rmRootGroup.rmHorizontal li > .rmLink > span.rmText {
+        font-size: 18px;
+    }
+
+    .divmenu .rmLink.rmRootLink, .RadMenu a.rmImageOnly .rmLeftImage, .RadMenu .rmRootGroup a.rmImageOnly {
+        padding: 5px 10px;
+    }
+}
+
+
+@media (max-width:900px) {
+    .cabecera .idiomas {
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        max-width: 40px;
+    }
+
+        .cabecera .idiomas input {
+            height: 16px;
+        }
+
+    .Registro {
+        width: 98%;
+    }
+
+    .Container.Admin {
+        max-width: 98%;
+    }
+
+    .Resultado.Docu {
+        width: 98%;
+    }
+
+    .lineDiv.IntroduccionDatos {
+        width: 98%;
+    }
+
+    .Container.AdminGrande {
+        max-width: 98%;
+    }
+
+    .Busqueda, .Resultado {
+        max-width: 98%;
+    }
+
+        .Resultado.Mapa {
+            max-width: 98%;
+        }
+
+    .RadImageGallery {
+        width: 100% !important;
+    }
+
+    .RegistroColaborador iframe {
+        width: 100% !important;
+    }
+}
+
+.filtro {
+    position: relative;
+}
+
+
